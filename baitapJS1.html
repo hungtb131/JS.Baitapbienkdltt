@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh diem trung binh</title>
+</head>
+
+<form>
+    <input type="text" id="Ly" placeholder="Điểm Lý"><br>
+    <input type="text" id="Hoa" placeholder="Điểm Hóa"><br>
+    <input type="text" id="Sinh" placeholder="Điểm Sinh"><br>
+    <input type="button" onclick="DTB();" value="Xem Kết Quả"><br>
+    <input type="text" id="result" placeholder="Trung Bình"><br>
+
+    <script>
+        function DTB() {
+            let L = parseFloat(document.getElementById('Ly').value);
+            let H = parseFloat(document.getElementById('Hoa').value);
+            let S = parseFloat(document.getElementById('Sinh').value);
+            let dtb = (L + H + S)/3;
+            document.getElementById('result').value=dtb.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

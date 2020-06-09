@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính diện tích hình tròn</title>
+</head>
+<body>
+<form>
+    <input type="text" id="bk" placeholder="Ban Kinh">
+    <input type="button" onclick="acreage();" value="result">
+    <input type="text" id="s" placeholder="Dien Tich">
+    <script>
+        function acreage() {
+            let r = parseFloat(document.getElementById('bk').value);
+            let S = (3.1415124151235* r * r)/4;
+            document.getElementById('s').value=S;
+        }
+    </script>
+</form>
+
+</body>
+</html>

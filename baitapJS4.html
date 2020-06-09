@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính chu vi hình tròn</title>
+</head>
+<body>
+<form>
+    <input type="text" id="BK" placeholder="radius">
+    <input type="button" onclick="P();" value="result">
+    <input type="text" id="CV" placeholder="perimeter">
+    <script>
+        function P() {
+            let r = parseFloat(document.getElementById('BK').value);
+            let C = (2*r*3.141423534611);
+            document.getElementById('CV').value=C;
+        }
+    </script>
+</form>
+</body>
+</html>

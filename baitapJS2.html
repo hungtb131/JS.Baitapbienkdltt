@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển độ C sang độ F</title>
+</head>
+<body>
+<h4>Chuyển đổi nhiệt độ C sang độ F</h4>
+<form>
+    <input type="text" id="0C" placeholder="Nhiet Do C">
+    <input type="button" onclick="QuyDoi();" value="Quy Doi Sang 0F">
+    <input type="text" id="result" placeholder="Nhiet Do F">
+    <script>
+        function QuyDoi() {
+            let C = parseInt(document.getElementById('0C').value);
+            let F = (C * 9)/5 +32;
+            document.getElementById('result').value = F;
+        }
+    </script>
+
+
+</form>
+</body>
+</html>
